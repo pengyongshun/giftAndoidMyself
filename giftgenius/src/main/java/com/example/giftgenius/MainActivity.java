@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mSupportFragmentManager = getSupportFragmentManager();
         initView();
         initFragment();
-       // initListener();
+        initListener();
     }
 
     /**

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_bd_detial1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <ImageView
+            android:id="@+id/iv_bd_detial_photo1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/tv_bd_detial_time1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:text="2016-08-17"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_bd_detial_content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@id/rl_bd_detial1"
+        android:text="xxxxxxx"/>
+
+</RelativeLayout>
