@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_item_gridview_bd_detial1"
+        android:layout_width="137dp"
+        android:layout_height="137dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/tv_item_gridview_bd_detial1"
+        android:layout_width="137dp"
+        android:layout_height="20dp"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_below="@id/iv_item_gridview_bd_detial1"
+        android:text="xxxx"/>
+    <Button
+        android:id="@+id/btn_item_gridview_bd_detial1"
+        android:layout_width="137dp"
+        android:layout_height="40dp"
+
+        android:textSize="20dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:layout_below="@id/tv_item_gridview_bd_detial1"
+        android:background="@drawable/shap_gift_detial_head_btn"
+        android:text="下载"/>
+
+
+</RelativeLayout>

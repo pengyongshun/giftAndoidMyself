@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.giftgenius.SerchActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_serch_show"
+        android:layout_width="match_parent"
+        android:background="#fd6563"
+        android:layout_height="?actionBarSize">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_serch_opendrawer_actionbar"
+                android:layout_width="33dp"
+                android:onClick="onClick"
+                android:background="@drawable/back"
+                android:layout_centerVertical="true"
+                android:layout_height="24dp"
+                />
+            <EditText
+                android:id="@+id/et_serch_actionbar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="24dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:background="@android:drawable/editbox_background"
+                android:layout_centerHorizontal="true"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/btn_serch_service_actionbar"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:text="搜索"
+                android:layout_marginLeft="5dp"
+                android:textSize="24dp"
+                android:onClick="onClick"
+                android:background="#fd6563"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/lv_serch_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar_serch_show"
+        android:layout_height="match_parent">
+    </ListView>
+    <TextView
+        android:id="@+id/tv_serch_empty"
+        android:layout_width="match_parent"
+        android:text="没有相关的包"
+        android:gravity="center"
+        android:layout_below="@id/toolbar_serch_show"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

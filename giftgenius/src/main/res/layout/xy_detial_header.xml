@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_xy_detial_photo1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_xy_detial_icon1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#fd6563"
+            android:src="@mipmap/ic_launcher" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#88888888"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_xy_detial_content1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="夏日炎炎"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
